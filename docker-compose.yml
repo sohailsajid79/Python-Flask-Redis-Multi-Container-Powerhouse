@@ -1,0 +1,13 @@
+version: "3"
+services:
+  redis:
+    images: "redis:alpine"
+    ports: -"6379":"6379"
+    volumes: -redis-data:/data
+  flask:
+  depends-on: -redis
+  build: .
+  ports: -"5000":"5000"
+  environment: -"REDIS_HOST=redis"
+
+volumes: redis-data
