@@ -41,11 +41,11 @@ The goal of this project is to create a multi-container application with the fol
 
 ### Application Endpoints
 
-Welcome Page: `http://localhost/5002`
+Welcome Page: `http://localhost:5002`
 
 ![ui_app](./assets/:hello.png)
 
-Visitor Count: `http://localhost/5002/count`
+Visitor Count: `http://localhost:5002/count`
 
 ![ui_app](./assets/:counter.png)
 
